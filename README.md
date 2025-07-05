@@ -1,1 +1,4 @@
-# LDCT-image-enhancement
+# Evaluating multiple combinations of models and encoders to enhance LDCT images
+Computed Tomography (CT) uses ionizing radiation that can damage the DNA of patients and increase the chance of developing cancer. Low-dose CT (LDCT) is an alternative that reduces radiation exposure but introduces noise and artifacts that compromise the quality of the image and, consequently, its diagnosis by specialists. To address this issue, we fine-tuned four architectures (U-Net, LinkNet, PSPNet, and MA-Net) with six pretrained encoders (ResNet50, VGG-16, DenseNet121, Inceptionv4, MobileNetv2, and EfficientNetb2) to enhance LDCT image quality and reduce noise. We evaluated the performance using classic evaluation metrics, namely, PSNR and SSIM. Using the Mayo Clinic dataset and data augmentation, the results showed that the U-Net+Inceptionv4 model achieved the best results (PSNR 48.797, SSIM 0.977), showing that traditional architectures and encoders effectively recover structural details and reduce noise while minimizing radiation risks. 
+
+![fig_mosaico_1](https://github.com/user-attachments/assets/7db4f113-b24c-45a8-8b80-f038e74f8089)
